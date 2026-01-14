@@ -9,11 +9,18 @@
     <h1>Quora Digest</h1>
     <% for (raj of posts ) { %>
         <div>
-            <h1>
-                <%= raj.user %>
-            </h1>
+            <h3>
+               @ <%= raj.user %>
+            </h3>
             <p><%= raj.Comment %></p>
+             <a href="http://localhost:8080/posts/<%= raj.id %>">Show deatails</a>
+             <a href="http://localhost:8080/posts/<%= raj.id %>">Edit</a>
+
         </div>
   <%  }%>
+
+  <a href="http://localhost:8080/posts/newPost">Create New Post</a>
+
+  
 </body>
 </html>
